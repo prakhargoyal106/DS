@@ -1,4 +1,6 @@
 #include<bits/stdc++.h>
+#include<iostream>
+#include<iterator>
 
 using namespace std;
 
@@ -13,7 +15,7 @@ int main(){
 	map<int,int>::iterator itr;
 	cout<< "The map gquiz is: "<<endl;
 
-	for(itr = gquiz1.begin();itr!=gquiz.end();itr++){
+	for(itr = gquiz1.begin();itr!=gquiz1.end();itr++){
 		cout<<'\t' << itr->first
 			<<'\t' << itr->second
 			<<endl;
