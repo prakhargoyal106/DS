@@ -19,7 +19,28 @@ int main(){
 		cout<<'\t' << itr->first
 			<<'\t' << itr->second
 			<<endl;
-			
+     }	
+	//assigning	the elements from gquiz1 to gquiz2
+	map<int,int> gquiz2(gquiz1.begin(),gquiz1.end());
 
-	}
+	cout<< "\n The map gquiz2 after"
+		<< "assign from gquiz1 is : \n"	
+
+		for (itr= gquiz2.begin();itr!=gquiz2.end();itr++)
+		{
+			cout<< '\t' << itr->first
+				<<'\t'  << itr->second<<endl;
+
+
+		}
+
+		//remove all elements upto element with key =3 in gquiz2
+
+		gquiz2.erase(gquiz2.begin(),gquiz.find(3));
+		for(itr=gquiz2.begin();itr!=gquiz2.end();itr++){
+			cout<< '\t' << itr->first
+				<< '\t' << itr->second << '\n';
+
+        }
+		
 }
